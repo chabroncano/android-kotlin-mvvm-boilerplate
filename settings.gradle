@@ -1,0 +1,3 @@
+rootProject.name='mvvm-boilerplate'
+include ':demo-app'
+include ':basemvvm'
