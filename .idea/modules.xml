@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basemvvm/basemvvm.iml" filepath="$PROJECT_DIR$/basemvvm/basemvvm.iml" group="mvvm-boilerplate/basemvvm" />
+      <module fileurl="file://$PROJECT_DIR$/demo-app/demo-app.iml" filepath="$PROJECT_DIR$/demo-app/demo-app.iml" group="mvvm-boilerplate/demo-app" />
+      <module fileurl="file://$PROJECT_DIR$/mvvm-boilerplate.iml" filepath="$PROJECT_DIR$/mvvm-boilerplate.iml" group="mvvm-boilerplate" />
+    </modules>
+  </component>
+</project>

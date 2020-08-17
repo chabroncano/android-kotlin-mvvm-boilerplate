@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">mvvm-boilerplate</string>
+    <string name="i_am_an_activity">I am an activity!</string>
+    <string name="i_am_a_fragment">I am an fragment!</string>
 </resources>
