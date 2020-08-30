@@ -16,7 +16,9 @@ abstract class BaseMvvmActivity<VM: ViewModel?,
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         init()
-        initViewModel(setViewModelFactory(), setViewModelClass())
+        setViewModelFactory()?.let { factory ->
+            initViewModel(factory, setViewModelClass())
+        }
         initBinding()
     }
 
@@ -28,10 +30,10 @@ abstract class BaseMvvmActivity<VM: ViewModel?,
     /**
      * returns instance of the ViewModel factory
      */
-    abstract fun setViewModelFactory(): ViewModelProvider.Factory
+    abstract fun setViewModelFactory(): ViewModelProvider.Factory?
 
     /**
-     * returns class of the ViewModel for this activity
+     * returns instance of the ViewModel factory
      */
     abstract fun setViewModelClass(): Class<VM>
 

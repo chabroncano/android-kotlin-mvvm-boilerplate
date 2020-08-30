@@ -9,6 +9,8 @@ class SampleFragment: BaseMvvmFragment<Nothing, FragmentSampleBinding>(R.layout.
 
     override fun setViewModelClass() = Nothing::class.java
 
+    override fun init() { }
+
     override fun onBind() {
         binding?.message = getString(R.string.i_am_a_fragment)
     }
