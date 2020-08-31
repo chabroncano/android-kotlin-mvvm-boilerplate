@@ -4,7 +4,7 @@ A boilerplate for your Android App's Model-View-ViewModel architectural framewor
 
 ## Set up
 
-Add `jcenter` in your root project's `build.gradle`
+Add `jcenter` to your root project's `build.gradle`
 
 ```
 buildscript {
@@ -18,7 +18,7 @@ buildscript {
 Then add this dependency to your app's `build.gradle`
 
 ```
-implementation 'com.chabroncano.basemvvm:basemvvm:1.0.0'
+implementation 'com.chabroncano.basemvvm:basemvvm:1.1.0'
 ```
 
 For maven:
@@ -27,19 +27,19 @@ For maven:
 <dependency>
 	<groupId>com.chabroncano.basemvvm</groupId>
 	<artifactId>basemvvm</artifactId>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<type>pom</type>
 </dependency>
 ```
 
 ## Guide
 
-Simply extend your Activities and Fragments to `BaseMvvmActivity` and `BaseMvvmFragment`, respectively. These are abstract generic classes that requires:
+Simply extend your Activities and Fragments to `BaseMvvmActivity` and `BaseMvvmFragment`, respectively. These are abstract generic classes that require:
 ```
 VM: ViewModel
 DB: ViewDataBinding
 ```
-These are recommended but optional. If you wish not to include any of these, put `Nothing` to indicate a non-existent ViewModel class or a UI generated via DataBinding. It also needs a res ID as a parameter, for example:
+These are recommended but optional. If you wish not to include any of these, put `Nothing` to indicate a non-existent ViewModel class or a dataBinding-generated UI. It also needs a res ID as a parameter, for example:
 ```
 class MainActivity : BaseMvvmActivity<MainActivityViewModel, ActivityMainBinding>(R.layout.activity_main) {
 ```
@@ -65,6 +65,4 @@ http://www.apache.org/licenses/
 ```
 
 ## Author
-Charlotte Margaret Broncano
-@chabroncano on Github and Medium
-chabroncano@gmail.com
+Charlotte Margaret Broncano | @chabroncano on Github and Medium | chabroncano@gmail.com
