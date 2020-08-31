@@ -16,7 +16,7 @@ class MainActivity : BaseMvvmActivity<MainActivityViewModel,
     override fun setViewModelClass() = MainActivityViewModel::class.java
 
     override fun onBind() {
-        binding?.message = getString(R.string.i_am_an_activity)
+        binding?.message = getString(R.string.i_am_a_view_in_the_activity)
         supportFragmentManager.beginTransaction().replace(R.id.container, SampleFragment()).commit()
     }
 }
